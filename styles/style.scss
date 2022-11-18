@@ -1,0 +1,43 @@
+$primary-font: "Raleway", sans-serif;
+$primary-color: #4e82be;
+$white-color: #fff;
+$black-color: #000;
+
+@mixin flex-property {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $primary-font;
+}
+
+html {
+  font-size: 15px;
+}
+
+.flex-box {
+  @include flex-property();
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5% 5%;
+}
+
+@import "button.scss";
+
+@import "_header.scss";
+
+@import "info.scss";
+
+@import "testimonial.scss";
+
+@import "image-gallery.scss";
+
+@import "footer.scss";
